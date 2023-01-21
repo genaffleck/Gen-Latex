@@ -1,0 +1,31 @@
+\documentclass{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts, amsmath, amssymb}
+\usepackage{gensymb}
+\usepackage{scalerel}
+
+%tikzpicture
+\usepackage{tkz-euclide}
+\usetikzlibrary{calc}
+\usetikzlibrary{positioning, patterns, arrows.meta}
+\usetikzlibrary{shadows}
+\usetikzlibrary{external}
+
+\begin{document}
+
+\section{tkzLabelPoint}
+
+\begin{tikzpicture}
+	\tkzDefPoint(0,0){A}
+	\tkzDefPoint(3,0){B}
+	\tkzDefPoint(0,4){C}
+	\tkzDrawSegments(A,B B,C C,A)
+	\tkzDrawPoints(A,B,C)
+    \tkzLabelPoint[left, red](A){$A$}
+    \tkzLabelPoint[right, blue](B){$B$}
+    \tkzLabelPoint[left, green!50!black](C){$C$}
+\end{tikzpicture}
+
+\section{autolabeling}
+
+\end{document}
